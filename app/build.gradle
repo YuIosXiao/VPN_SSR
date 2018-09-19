@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.wwws.wwwsvpn.myapplication"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+         /*   //混淆
+            minifyEnabled true
+            //移除无用的resource文件
+            shrinkResources false
+            //代码压缩
+            useProguard true*/
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile project(path: ':ssr_sdk')
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.j256.ormlite:ormlite-android:5.0'
+    compile 'dnsjava:dnsjava:2.1.7'
+    compile 'eu.chainfire:libsuperuser:1.0.0.201608240809'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:25.3.0'
+    implementation 'com.android.support:support-v4:25.3.0'
+    androidTestImplementation 'com.android.support:support-annotations:25.3.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:0.5'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+    implementation 'com.android.support:design:25.3.0'
+    implementation 'com.android.support:recyclerview-v7:25.3.0'
+    // https://android.googlesource.com/platform/frameworks/volley
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation files('libs/commons-codec-1.10.jar')
+    implementation files('libs/bcprov-jdk15on-160.jar')
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sign1"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="right|top"
+        android:background="@mipmap/sign_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/fl_top"
+        android:background="@mipmap/sign_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ohnnoi">
+
+
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_marginRight="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_middle"
+            android:background="@mipmap/sign_date"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="#288EF1"
+        android:id="@+id/tv_sign_date"
+        android:gravity="center"
+        android:text="2018-04-08"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:background="#f5fafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.wwws.wwwsvpn.myapplication.view.WeekView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/oihiho"
+        android:background="#f5fafe"
+        app:wv_textColor="#333333"
+        app:wv_textSize="14sp"/>
+
+    <com.wwws.wwwsvpn.myapplication.view.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guigiu"
+        android:background="#f5fafe"
+        app:cv_selectDayBackground="@mipmap/sign_date_jy"
+        app:cv_selectTextColor="@android:color/white"
+        app:cv_textColor="#333333"
+        app:cv_textSize="14sp"
+        android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

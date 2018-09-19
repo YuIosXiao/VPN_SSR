@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/pay_bg"
+    android:paddingBottom="35dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_pay_title"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/a44"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_pay_price"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_pay_title"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FA5778"
+        android:text="6.00"
+        android:textSize="26sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="#ffffff"
+        android:id="@+id/ll_pay_wx"
+        android:layout_below="@+id/tv_pay_price"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_weight="0"
+            android:background="@mipmap/wx_icon"
+            android:layout_margin="16dp"
+            android:layout_width="24dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:text="@string/a45"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/bt_pay_wx"
+            android:background="@drawable/checkbox_style"
+            android:layout_margin="15dp"
+            android:layout_weight="0"
+            android:layout_width="21dp"
+            android:layout_height="21dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ffffff"
+        android:id="@+id/ll_pay_zfb"
+        android:layout_below="@+id/ll_pay_wx"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_weight="0"
+            android:background="@mipmap/zfb_icon"
+            android:layout_margin="16dp"
+            android:layout_width="24dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:text="@string/a46"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/bt_pay_zfb"
+            android:clickable="false"
+            android:background="@drawable/checkbox_style"
+            android:layout_margin="15dp"
+            android:layout_weight="0"
+            android:layout_width="21dp"
+            android:layout_height="21dp" />
+    </LinearLayout>
+    
+    <Button
+
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/ll_pay_zfb"
+        android:id="@+id/bt_pay_confirm"
+        android:background="@drawable/shape_button_quit"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="@string/a47"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+
+
+</RelativeLayout>

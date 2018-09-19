@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/shape_dialog"
+        android:layout_width="300dp"
+        android:layout_height="290dp">
+    <ImageView
+        android:background="@mipmap/myshare"
+        android:layout_width="match_parent"
+        android:layout_height="130dp" />
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#0198D9"
+        android:textSize="13sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/a48"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+    <Button
+        android:id="@+id/bt_good"
+        android:background="@drawable/shape_sharer"
+        android:layout_marginTop="15dp"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:text="@string/a49"
+        android:layout_width="240dp"
+        android:layout_height="46dp" />
+
+    <Button
+        android:id="@+id/bt_share"
+        android:background="@mipmap/btn_default_bg"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#BCBCBC"
+        android:text="@string/a50"
+        android:layout_width="240dp"
+        android:layout_height="46dp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/bt_close"
+        android:layout_gravity="center"
+        android:background="@mipmap/guanbi"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="38dp"/>
+</LinearLayout>

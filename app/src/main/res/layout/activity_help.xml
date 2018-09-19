@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#14AFDA"
+    android:id="@+id/ll_help"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/iv_state"
+        android:background="@drawable/shape_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <com.wwws.wwwsvpn.myapplication.view.TopBar
+        android:id="@+id/tb_help"
+        app:titleText="@string/help"
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.wwws.wwwsvpn.myapplication.view.TopBar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#f5f5f5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+
+            android:textColor="#333333"
+            android:text="@string/problem"
+            android:paddingLeft="15dp"
+            android:gravity="left|center_vertical"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:id="@+id/list_view">
+    </ListView>
+    </LinearLayout>
+</LinearLayout>

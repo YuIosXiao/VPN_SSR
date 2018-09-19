@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_createorder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/iv_state"
+        android:background="@drawable/shape_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <com.wwws.wwwsvpn.myapplication.view.TopBar
+        android:id="@+id/tb_createorder"
+        app:titleText="@string/pay_order"
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.wwws.wwwsvpn.myapplication.view.TopBar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#f5f5f5"
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/order_info_icon"
+                    android:layout_width="21dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@mipmap/alites_order_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/order_message"
+                    android:textColor="#333333"
+                    android:textSize="17sp" />
+            </LinearLayout>
+            <View
+                android:background="#EBEBEB"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:id="@+id/order_type"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="left|center_vertical"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/order_createtime"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/order_price"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/order_pay_icon"
+                    android:layout_width="24.5dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@mipmap/alites_order_paytype" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/a1"
+                    android:textColor="#333333"
+                    android:textSize="17sp" />
+            </LinearLayout>
+            <View
+                android:background="#EBEBEB"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/wx_pay_item"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:layout_height="60dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/wx_pay_icon" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/a2"
+                    android:layout_weight="1"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:id="@+id/wx_pay_sel"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@mipmap/item_seled_icon" />
+            </LinearLayout>
+            <View
+                android:background="#EBEBEB"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:id="@+id/ali_pay_item"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:layout_height="60dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/ali_pay_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/a3"
+                    android:layout_weight="1"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:id="@+id/ali_pay_sel"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@mipmap/item_nosel_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/bt_pay_order"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/btn_updata"
+            android:gravity="center"
+            android:text="@string/a4"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

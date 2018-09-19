@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="myblue">#12BBE7</color>
+    <color name="transparent">#00000000</color>
+    <color name="lightBlue">#14AFDA</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="lightblack">#999999</color>
+</resources>

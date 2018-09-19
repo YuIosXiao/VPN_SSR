@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#14AFDA"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_setting"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_state"
+        android:background="@drawable/shape_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <com.wwws.wwwsvpn.myapplication.view.TopBar
+        android:id="@+id/tb_back"
+        app:titleText="@string/account_setting"
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.wwws.wwwsvpn.myapplication.view.TopBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#f5f5f5"
+        android:paddingTop="8dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/ll_warm_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EBEBEB" />
+
+        <LinearLayout
+            android:id="@+id/ll_warm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff8f3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/iocn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:text="@string/a20"
+                android:textColor="#FF6E03"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@mipmap/yonghu" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/account_id"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_userid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center_vertical"
+                    android:text="1565656464"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <View
+                android:id="@+id/iv_password_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:background="#ebebeb" />
+
+            <LinearLayout
+                android:id="@+id/ll_password"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/mima" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/account_vip_password"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_vip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="1565656464"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+                <Button
+                    android:id="@+id/bt_eye"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_Binding"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/bind" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/account_bind_mobile"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/right" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:background="#ebebeb" />
+            <LinearLayout
+                android:id="@+id/ll_change_pwd"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/modify" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/account_modify_pwd"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/right" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:background="#ebebeb" />
+            <LinearLayout
+                android:id="@+id/ll_opinion"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/exchange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/account_praise"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/right" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_feedback"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/feedback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/app_problem_feedback"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/right" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:background="#ebebeb" />
+            <LinearLayout
+                android:id="@+id/ll_help"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/help" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/app_problem_help"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/right" />
+            </LinearLayout>
+            <View
+                android:id="@+id/usedpc_line"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:background="#ebebeb" />
+      <!--      <LinearLayout
+                android:id="@+id/ll_usedpc"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/usedpc_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/app_used_pc"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/right" />
+            </LinearLayout>-->
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:id="@+id/appshare_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/btn_updata"
+            android:gravity="center"
+            android:text="@string/account_exchange"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+    </LinearLayout>
+</LinearLayout>

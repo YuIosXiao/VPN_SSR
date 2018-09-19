@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recharge_item_height"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="9dp"
+        android:background="@mipmap/recharge_jy"
+        android:id="@+id/ll_monthly"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <TextView
+          android:layout_marginTop="6dp"
+          android:id="@+id/tv_monthly_name"
+          android:textColor="#ffffff"
+          android:textSize="16sp"
+          android:text="@string/a28"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_monthly_new_price"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/www4"
+        android:layout_marginTop="5dp"
+        android:text="¥30.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_monthly_old_price"
+            android:textColor="#ffffff"
+            android:layout_marginTop="3dp"
+            android:textSize="17sp"
+            android:text="¥30.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

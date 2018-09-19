@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    android:paddingBottom="8dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#ffffff"
+            android:paddingRight="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <ImageView
+                android:id="@+id/iv_question"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="@mipmap/question" />
+            <TextView
+                android:id="@+id/tv_item_title"
+                android:textColor="#333333"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:text="@string/a26"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ebebeb" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="13dp"
+                android:background="@mipmap/answer" />
+
+            <TextView
+                android:paddingBottom="8dp"
+                android:id="@+id/tv_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="请检查手机.....看是否......----------------------------------------------------------------------------------------------------------------------------------****************************************----------------------------------------------"
+                android:textColor="#999999"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

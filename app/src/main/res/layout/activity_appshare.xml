@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_appshare"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/iv_state"
+        android:background="@drawable/shape_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <com.wwws.wwwsvpn.myapplication.view.TopBar
+        android:id="@+id/tb_appshare"
+        app:titleText="@string/share"
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.wwws.wwwsvpn.myapplication.view.TopBar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#f5f5f5"
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/share_info"
+            android:orientation="vertical"
+            android:background="@mipmap/elites_share_body"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+                    <TextView
+                        android:id="@+id/tv_promotion"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:text="@string/user_share_title"
+                        android:textColor="#333333"
+                        android:layout_marginTop="13dp"
+                        android:textSize="16sp"
+                    android:layout_height="20dp" />
+                    <TextView
+                        android:layout_toRightOf="@+id/tv_promotion"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/user_share_code"
+                        android:layout_marginTop="13dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+                    <Button
+                        android:textAllCaps="false"
+                        android:id="@+id/share_copy"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/copy"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/white"
+                        android:background="@mipmap/elites_share_btnbg"
+                        android:layout_width="60dp"
+                        android:layout_height="26dp" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff6e03"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:text="@string/user_share_tips"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="100dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+                    <TextView
+                        android:id="@+id/tv_recommender"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/bind_share_title"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:id="@+id/bind_share_code"
+                        android:layout_marginTop="13dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="20dp" />
+                    <EditText
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_recommender"
+                        android:id="@+id/edit_share_code"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="@string/referee_bind_hits"
+                        android:textSize="15sp"
+                        android:singleLine="true"
+                        android:maxLength="8"
+                        android:background="@drawable/edit_bg"
+                        android:layout_height="30dp" />
+                    <Button
+                        android:textAllCaps="false"
+                        android:id="@+id/share_bind"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/bind_share"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/white"
+                        android:background="@mipmap/elites_share_btnbg"
+                        android:layout_width="60dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="26dp" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#ff6e03"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:text="@string/bind_share_tips"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="75dp"
+            android:layout_width="match_parent"
+            android:layout_height="172dp">
+            <RelativeLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="320dp"
+                android:layout_height="20dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="#ebebeb" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="@string/shareto_title"
+                    android:textColor="#666666"
+                    android:background="#f5f5f5"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/share_wechat"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:drawableTop="@mipmap/wechat_icon"
+                    android:padding="5dp"
+                    android:text="@string/wechat"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/share_pyq"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@mipmap/wechat_pyq_icon"
+                    android:padding="5dp"
+                    android:text="@string/friend"
+                    android:textSize="15sp"
+                    android:textColor="#999999"
+                    android:background="@null"/>
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/share_weibo"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@mipmap/sina_weibo_icon"
+                    android:padding="5dp"
+                    android:text="@string/weibo"
+                    android:textSize="15sp"
+                    android:textColor="#999999"
+                    android:background="@null"/>
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/share_qq"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:drawableTop="@mipmap/qq_icon"
+                    android:padding="5dp"
+                    android:text="QQ"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

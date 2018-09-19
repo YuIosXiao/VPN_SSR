@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#14AFDA"
+    android:orientation="vertical"
+    android:id="@+id/ll_feedback_top"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/iv_state"
+        android:background="@drawable/shape_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <com.wwws.wwwsvpn.myapplication.view.TopBar
+        android:id="@+id/tb_feedback"
+        app:titleText="@string/feedback"
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.wwws.wwwsvpn.myapplication.view.TopBar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#f5f5f5"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:background="#EBEBEB"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <EditText
+        android:textColor="#333333"
+        android:id="@+id/et_content"
+        android:paddingLeft="@dimen/x35"
+        android:textColorHint="#999999"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15sp"
+        android:gravity="top"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@null"
+        android:hint="@string/content"
+        android:maxLength="150"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y450" />
+        </LinearLayout>
+    <ImageView
+        android:background="#EBEBEB"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1" />
+    <ImageView
+        android:layout_marginTop="@dimen/y15"
+        android:background="#EBEBEB"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1" />
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <EditText
+        android:textColor="#999999"
+        android:id="@+id/et_contact"
+        android:paddingLeft="@dimen/x35"
+        android:textColorHint="#999999"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:background="@null"
+        android:hint="@string/feedback_hint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100" />
+        </LinearLayout>
+    <ImageView
+        android:background="#EBEBEB"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1" />
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/bt_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y60"
+            android:background="@mipmap/btn_updata"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\VPN\ssr_sdk\src\main\jniLibs"><file name="armeabi-v7a/libsystem.so" path="E:\VPN\ssr_sdk\src\main\jniLibs\armeabi-v7a\libsystem.so"/></source></dataSet><dataSet config="debug"><source path="E:\VPN\ssr_sdk\src\debug\jniLibs"/></dataSet></merger>

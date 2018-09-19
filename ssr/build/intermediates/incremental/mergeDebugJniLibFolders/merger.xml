@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\SVN\bin\svn\svn\vpnapp\androidapp\MyApplication2\ssr\src\main\jniLibs"><file name="armeabi-v7a/libsystem.so" path="E:\SVN\bin\svn\svn\vpnapp\androidapp\MyApplication2\ssr\src\main\jniLibs\armeabi-v7a\libsystem.so"/></source></dataSet><dataSet config="debug"><source path="E:\SVN\bin\svn\svn\vpnapp\androidapp\MyApplication2\ssr\src\debug\jniLibs"/></dataSet></merger>

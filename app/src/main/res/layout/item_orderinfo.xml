@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    android:paddingBottom="8dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="#ffffff"
+                android:id="@+id/item_top"
+                android:paddingRight="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/tv_item_createtime"
+                    android:textColor="#333333"
+                    android:gravity="left|center_vertical"
+                    android:textSize="16dp"
+                    android:text="@string/a22"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_item_state"
+                    android:textColor="#333333"
+                    android:gravity="center_vertical"
+                    android:textSize="16dp"
+                    android:text="@string/a23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/item_top_line"
+                android:layout_below="@+id/item_top"
+                android:layout_height="1dp"
+                android:background="#ebebeb" />
+            <TextView
+                android:id="@+id/tv_item_orderinfo"
+                android:layout_below="@+id/item_top_line"
+                android:textColor="#333333"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:textSize="16dp"
+                android:text="@string/a24"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ebebeb" />
+            <TextView
+                android:id="@+id/tv_item_orderprice"
+                android:textColor="#333333"
+                android:gravity="right|center_vertical"
+                android:textSize="16dp"
+                android:text="@string/a25"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/tv_item_ordercancel"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/order_state_cancel"/>
+    </RelativeLayout>
+</LinearLayout>
+
